@@ -18,7 +18,7 @@ public class MessageService {
     }
 
     public static void listMessage() {
-        MessageDAO.listMessagesDB();
+        MessageDAO.listMessageDB();
 
     }
 

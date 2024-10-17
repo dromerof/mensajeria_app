@@ -1,5 +1,6 @@
 package dromerof.service;
 
+import dromerof.dao.UserDAO;
 import dromerof.model.User;
 
 import java.util.Scanner;

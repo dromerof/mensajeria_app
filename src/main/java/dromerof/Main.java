@@ -37,7 +37,7 @@ public class Main {
                 case 2:
                     User resultado = UserService.login(sc);
                     if(resultado.getUserId() > 0){
-                        MenuSesion.menuSesion(resultado, sc);
+                        menuSesion.menuSesion(resultado, sc);
                     }
                     break;
                 default:
