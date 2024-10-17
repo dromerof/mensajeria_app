@@ -5,8 +5,20 @@ public class Message {
     String message;
     String date;
     String fullName;
+    int userId;
 
     public Message() {
+    }
+    //delete message by Id
+    public Message(int messageId, int userId) {
+        this.messageId = messageId;
+        this.userId = userId;
+    }
+
+    //create message
+    public Message(String message, int userId) {
+        this.message = message;
+        this.userId = userId;
     }
 
     public Message(int messageId, String message, String date, String fullName) {
@@ -22,6 +34,14 @@ public class Message {
 
     public void setMessageId(int messageId) {
         this.messageId = messageId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getMessage() {
